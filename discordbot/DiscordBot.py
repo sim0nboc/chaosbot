@@ -13,8 +13,10 @@ Peterson = 'https://washalert.sdsmt.edu/washalertweb/washalertweb.aspx?location=
 Palmerton = 'https://washalert.sdsmt.edu/washalertweb/washalertweb.aspx?location=76d93bb5-481a-468b-bfdb-45a891a4dd40'
 dadJokes = 'http://niceonedad.com/'
 
+tokenFile = open(r'C:\Users\hidde\Desktop\chaosToken.txt')
+for line in enumerate(tokenFile):
+    TOKEN = line
 
-TOKEN = 'NTQ0NzQ0OTA4NDkwMjc2ODY3.D0kFvQ.r3YA2FVIE4lqrjSAzMr1T3G5Hro'
 client = commands.Bot(command_prefix = '.')
 
 def file_len(fname):
