@@ -46,7 +46,7 @@ async def on_message(message):
 
     if message.content.lower().startswith('i cri'):
         await client.send_message(channel, 'Dont be depresso, have an espresso <:widogasm:549837703189889035> :coffee:')
-        await client.send_message(channel, 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/6/1/0/fnd_coffee-istock.jpg.rend.hgtvcom.616.462.suffix/1433158604769.jpeg')
+        await client.send_message(channel, 'https://cdn.chefjohnhowie.com/wp-content/uploads/2018/03/Coffee-tips-from-Erik-Liedholm.jpg')
 
     if message.content.lower().startswith("m'lady"):
         await client.send_message(channel, 'https://cdn.discordapp.com/attachments/554733032121303063/568520330520428545/image0.png')
