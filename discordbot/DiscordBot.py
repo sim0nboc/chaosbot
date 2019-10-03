@@ -17,7 +17,7 @@ tokenFile = open(r'C:\Users\hidde\Desktop\chaosToken.txt')
 for line in tokenFile:
     TOKEN = line
 
-client = commands.Bot(command_prefix = '.')
+client = commands.Bot(command_prefix = '|')
 
 def file_len(fname):
     with open(fname) as f:
