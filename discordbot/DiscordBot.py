@@ -28,7 +28,6 @@ def file_len(fname):
     return i + 1
 
 @client.event
-
 async def on_message(message):    
     author = message.author
     content = message.content
@@ -76,28 +75,6 @@ async def hai():
     await client.say('Hallo!')
 
 @client.command()
-async def echo(*args):
-    output = ''
-    for word in args:
-        output += word
-        output += ' '
-        
-    print(output)  
-    await client.say(output)
-
-@client.command()
-async def wat():
-    await client.say('Nani the fuck??')
-
-@client.command(pass_context=True)
-@commands.has_role('Powah')
-async def power(ctx):
-    member = ctx.message.author
-    role = discord.utils.get(member.server.roles, name = 'Powah')#discord.utils.get(server.roles, name = 'Powah')
-        
-    await client.add_roles(member, role)
-
-@client.command()
 async def eightball(*args):
     randResponse = random.randint(0, 8)
 
@@ -108,23 +85,6 @@ async def eightball(*args):
             response = responseR[:-1]
     sleep(2)
     await client.say(response)
-
-@client.command()
-async def hentaibomb():
-    randResponse = random.randint(0, (file_len('nadekoResponse.txt')))
-    print(randResponse)
-    
-    rF = open('nadekoResponse.txt')
-    for i, line in enumerate(rF):
-        if i == randResponse:
-            responseR = line         
-            response = responseR[:-1]
-        if randResponse == 0:
-            response = '<@234383548985901057> Why did you ask for this?'
-            
-    sleep(2)        
-    await client.say(response)
-
 
 @client.command()
 async def compliment(*args):
