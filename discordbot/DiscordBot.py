@@ -143,9 +143,8 @@ async def wink():
 
 @client.command()
 async def moan():
-    await client.say('https://cdn.discordapp.com/attachments/554733032121303063/556018226673352715/shake.gif')
     await client.say('Just for u senpai:')
-    await client.say('https://discordapp.com/channels/540286718549688332/540287841721122826/564996910814068737')
+    await client.say('https://cdn.discordapp.com/attachments/554733032121303063/556018226673352715/shake.gif')
 
 @client.command()
 async def roast(*args):
