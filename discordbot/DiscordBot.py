@@ -49,11 +49,11 @@ async def on_message(message):
         await client.send_message(channel, 'https://cdn.discordapp.com/attachments/554733032121303063/568520330520428545/image0.png')
         
     if message.content.lower().startswith("bitch"):
-        await clinet.send_message(channel, "Die, hoe")
+        await client.send_message(channel, "Die, hoe")
         
     if message.content.lower().startswith("yeet"):
-        await clinet.send_message(channel, 'https://tenor.com/view/skeleton-dancing-skeletondancing-gif-5094083')
-        await clinet.send_message(channel, 'https://tenor.com/view/dab-dancing-idgaf-gif-5661979')
+        await client.send_message(channel, 'https://tenor.com/view/skeleton-dancing-skeletondancing-gif-5094083')
+        await client.send_message(channel, 'https://tenor.com/view/dab-dancing-idgaf-gif-5661979')
 
     else:
         await client.process_commands(message)
