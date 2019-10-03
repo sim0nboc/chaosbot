@@ -30,19 +30,14 @@ def file_len(fname):
 @client.event
 
 async def on_message(message):    
-
     author = message.author
-
     content = message.content
-
     channel = message.channel
 
     
 
     if message.author.id == "554174974982881280" and message.content.startswith('PLUS ULTRA!!!!! '):
-
         await client.send_message(channel, 'Ugh, that bot annoys me')
-
         await client.send_message(channel, 'https://78.media.tumblr.com/7a17c7211b1063b465c29da969e58b47/tumblr_o9pmnxz2aI1sw7bx5o1_400.gif')
 
 
@@ -56,7 +51,6 @@ async def on_message(message):
         await clinet.send_message(channel, "Die, hoe")
 
     else:
-
         await client.process_commands(message)
 
 @client.event
@@ -66,7 +60,7 @@ async def on_ready():
 @client.command()
 async def update():
     os.system(r'cd C:\Users\hidde\Desktop')
-    os.system('chaosUpdater.bat')
+    os.system(r'cmd /k chaosUpdater.bat')
     exit()
 
 @client.command()
