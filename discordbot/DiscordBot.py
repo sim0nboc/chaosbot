@@ -8,6 +8,8 @@ import bs4
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
+import os
+
 #web scraping
 Peterson = 'https://washalert.sdsmt.edu/washalertweb/washalertweb.aspx?location=5013aaa2-fb4a-4f46-97f5-d6c4321a4f1d'
 Palmerton = 'https://washalert.sdsmt.edu/washalertweb/washalertweb.aspx?location=76d93bb5-481a-468b-bfdb-45a891a4dd40'
@@ -63,6 +65,8 @@ async def on_ready():
     
 @client.command()
 async def update():
+    os.system('cd C:\Users\hidde\Desktop')
+    os.system('chaosUpdater.bat')
     exit()
 
 @client.command()
