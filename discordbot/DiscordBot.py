@@ -32,14 +32,7 @@ async def on_message(message):
     author = message.author
     content = message.content
     channel = message.channel
-
     
-
-    if message.author.id == "554174974982881280" and message.content.startswith('PLUS ULTRA!!!!! '):
-        await client.send_message(channel, 'Ugh, that bot annoys me')
-        await client.send_message(channel, 'https://78.media.tumblr.com/7a17c7211b1063b465c29da969e58b47/tumblr_o9pmnxz2aI1sw7bx5o1_400.gif')
-
-
     if message.content.lower().startswith('i cri'):
         await client.send_message(channel, 'Dont be depresso, have an espresso <:widogasm:549837703189889035> :coffee:')
         await client.send_message(channel, 'https://cdn.chefjohnhowie.com/wp-content/uploads/2018/03/Coffee-tips-from-Erik-Liedholm.jpg')
