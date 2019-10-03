@@ -65,7 +65,7 @@ async def on_ready():
     
 @client.command()
 async def update():
-    os.system('cd C:\Users\hidde\Desktop')
+    os.system(r'cd C:\Users\hidde\Desktop')
     os.system('chaosUpdater.bat')
     exit()
 
