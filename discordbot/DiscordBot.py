@@ -60,6 +60,10 @@ async def on_message(message):
 @client.event
 async def on_ready():
     print('Bot is ready.')
+    
+@client.command()
+async def update():
+    exit()
 
 @client.command()
 async def crash():
