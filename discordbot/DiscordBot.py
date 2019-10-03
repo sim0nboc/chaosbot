@@ -14,7 +14,7 @@ Palmerton = 'https://washalert.sdsmt.edu/washalertweb/washalertweb.aspx?location
 dadJokes = 'http://niceonedad.com/'
 
 tokenFile = open(r'C:\Users\hidde\Desktop\chaosToken.txt')
-for line in enumerate(tokenFile):
+for line in tokenFile:
     TOKEN = line
 
 client = commands.Bot(command_prefix = '.')
